@@ -1,0 +1,47 @@
+.test {
+    padding-top: 100px;
+}
+
+.faq-container {
+    box-sizing: border-box;
+    border-bottom: 1px solid #000000;
+    overflow: hidden;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .faq-box {
+    display: flex;
+    padding: 17.5px 140px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .faq-box.active svg line:last-child {
+    display: none;
+  }
+  
+  .faq-text {
+    font-size: 20px;
+    color: #29851b;
+    text-transform: uppercase;
+  }
+  
+  .faq-sub-text {
+    transition: height 200ms ease-in-out;
+    height: 0px;
+  }
+  
+  .accordion-text,
+  .info-text {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  
+  .accordion-text {
+    max-width: 700px;
+    padding: 40px 0 40px 140px;
+  }
+  
+  

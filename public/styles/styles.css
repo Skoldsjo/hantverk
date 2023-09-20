@@ -189,14 +189,14 @@ footer {
   /* Add responsive styles here */
 }
 
-/* #human-genome {
+.hide {
   display: none;
 }
 
-#human-genome1 {
-  display: none;
-} */
 
-.hide {
-  display: none;
+h1 {
+  padding-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
