@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Hantverkare</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="#">Logo</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#">Hem</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Kontakt</a></li>
+            </ul>
+            <div class="burger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="hero-container">
+        <div class="hero">
+            <div class="filters">
+    
+                <div class="ui-group">
+                    <h3>Kategori</h3>
+                    <select class="filter-select" value-group="category">
+                    <option value="">Alla</option>
+                    <option value=".carpenter">Snickare</option>
+                    <option value=".plumber">Rörmokare</option>
+                    <option value=".lumberjack">Skogshuggare</option>
+                    </select>
+                </div>
+
+
+                <div class="ui-group">
+                    <h3>Län</h3>
+                    <select name="subject" id="subject" class="filter-select" value-group="county">
+                    <option value=".empty">Alla</option>
+                    <option value=".blekinge">Blekinge</option>
+                    <option value=".blekinge">Blekinge</option>
+                    <option value=".dalarna">Dalarna</option>
+                    <option value=".gottland">Gottland</option>
+                    <option value=".gavleborg">Gävleborg</option>
+                    <option value=".goteborg">Göteborg</option>
+                    <option value=".halland">Halland</option>
+                    <option value=".jamtland">Jämtland</option>
+                    <option value=".jonkoping">Jönköping</option>
+                    <option value=".kalmar">Kalmar</option>
+                    <option value=".kronoberg">Kronoberg</option>
+                    <option value=".norrbotten">Norrbotten</option>
+                    <option value=".skaraborg">Skaraborg</option>
+                    <option value=".skane">Skåne</option>
+                    <option value=".stockholm">Stockholm</option>
+                    <option value=".sodermanland">Södermanland</option>
+                    <option value=".uppsala">Uppsala</option>
+                    <option value=".varmland">Värmland</option>
+                    <option value=".vasterbotten">Västerbotten</option>
+                    <option value=".vasternorrland">Västernorrland</option>
+                    <option value=".vastmanland">Västmanland</option>
+                    <option value=".alvsborg">Älvsborg</option>
+                    <option value=".orebro">Örebro</option>
+                    <option value=".ostergotland">Östergötland</option>
+                    </select>
+                </div>
+
+                <div class="ui-group" id="county-choose">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Län först</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-blekinge">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Blekinge 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-dalarna">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Dalarna 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-gottland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Gottland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-gavleborg">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Gävleborg 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-goteborg">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Göteborg 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-halland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Halland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-jamtland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Jämtland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-jonkoping">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Jönköping 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-kalmar">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Kalmar 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-kronoberg">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Kronoberg 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-norrbotten">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Norrbotten 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-skaraborg">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Skaraborg 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-skane">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".karlskoga">Skåne 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-stockholm">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Stockholm 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-sodermanland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Södermanland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-uppsala">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Uppsala 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-varmland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".karlskoga">Värmland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-vasterbotten">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Västerbotten 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-vasternorrland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Västernorrland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-vastmanland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Västmanland 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-alvsborg">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Älvsborg 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-orebro">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Örebro 1</option>
+                    </select>
+                </div>
+
+                <div class="ui-group hide" id="county-ostergotland">
+                    <h3>Stad</h3>
+                    <select class="filter-select" value-group="city">
+                    <option value="">Välj Stad</option>
+                    <option value=".lägginstad">Östergötland 1</option>
+                    </select>
+                </div>
+                
+            </div>
+    
+            <div class="hero-info">
+                <h2>Hitta hjälp snabbt och enkelt</h2>
+            </div>
+        </div>
+    </div>
+    
+    <div class="grid">
+
+        <!-- ML Skog & Allservice -->
+        <script src="./Businesses/mlskogallservice/mlskogallservice.js"></script>
+
+        <!-- Rörmokare AB i Malmö -->
+        <script src="./Businesses/malmo.js"></script>
+
+        <!-- Snickare AB i Kristinehamn -->
+        <script src="./Businesses/kristinehamn.js"></script>
+
+        <!-- Snickare AB i Malmö -->
+        <script src="./Businesses/test.js"></script>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./scripts/isotope.js"></script>
+    <script type="text/javascript" src="./scripts/javascript.js"></script>
+    <script type="text/javascript" src="./components/header.js"></script>
+    <script type="text/javascript" src="./scripts/hamham.js"></script>
+    
+    
+</body>
+</html>

@@ -1,0 +1,104 @@
+
+
+/* Style the header */
+header {
+    background-color: #00303F;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    border-bottom: 1px solid #336576;
+}
+
+/* Style the navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links ul {
+    list-style: none;
+    
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+/* Style the burger menu icon for mobile */
+.burger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    background-color: #fff;
+    height: 4px;
+    width: 30px;
+    margin: 4px 0;
+}
+
+/* Media query for responsive design */
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
+}
+
+
+
+/* Style for the responsive navigation menu */
+
+
+.nav-links.show {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 76px; /* Adjust as needed based on your header height */
+    right: 0px;
+    background-color: #333;
+    border-bottom: 5px;
+    z-index: 1;
+}
+
+.nav-links.show li {
+    margin: 10px 0;
+}
+
+.nav-links.show a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.nav-links.show a:hover {
+    background-color: #555;
+}

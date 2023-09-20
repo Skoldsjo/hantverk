@@ -1,0 +1,15 @@
+document.write(`
+    <div class="box non-premium carpenter varmland kristinehamn">
+
+        <div class="box-name">
+            <div>
+                <h4>Snickare Kristinehamn AB</h4>
+            </div>
+            <div class="box-contact">
+                <a href="tel:+012-3456789">
+                    <button>012-3456789</button>
+                </a>
+            </div>
+        </div>
+    </div>
+`);
