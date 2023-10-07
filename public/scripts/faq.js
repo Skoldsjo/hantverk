@@ -33,3 +33,5 @@ const panel = document.querySelectorAll('.faq-sub-text');
 
 
 document.body.classList.remove('is-exiting')
+
+

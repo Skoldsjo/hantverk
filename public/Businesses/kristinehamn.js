@@ -5,7 +5,8 @@ document.write(`
             <div>
                 <h4>Snickare Kristinehamn AB</h4>
             </div>
-            <div class="box-contact">
+
+            <div class="contact-buttons">
                 <a href="tel:+012-3456789">
                     <button>012-3456789</button>
                 </a>

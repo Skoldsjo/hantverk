@@ -6,22 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/styles.css">
-    <title>Hantverkare</title>
+    <title>HantverkarGuiden</title>
 </head>
 <body>
-
     <header>
         <nav class="navbar">
             <div class="logo">
-                <a href="index.html">Logo</a>
+                <a href="index.html">HantverkarGuiden</a>
             </div>
             <ul class="nav-links">
                 <li><a href="index.html">Hem</a></li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">Kontakt</a></li>
             </ul>
             <div class="burger-menu">
                 <div class="bar"></div>
@@ -270,38 +272,91 @@
                 
             </div>
     
-            <div class="hero-info">
-                <h2>Hitta hjälp snabbt och enkelt</h2>
-            </div>
+            <!-- <div class="hero-info">
+                <h1>Hitta hjälp snabbt och enkelt</h1>
+            </div> -->
         </div>
     </div>
-    
-    <div class="grid">
 
-        <!-- ML Skog & Allservice -->
-        <script src="./Businesses/mlskogallservice/mlskogallservice.js"></script>
+   
+    <div id="container">
+        <ul class="grid">
 
-        <!-- Rörmokare AB i Malmö -->
-        <script src="./Businesses/malmo.js"></script>
+            <!-- ML Skog & Allservice -->
+            <div>
+                <script src="./Businesses/mlskogallservice/mlskogallservice.js"></script>
+            </div>
+        
+            <!-- Rörmokare AB i Malmö -->
+            <div>
+                <script src="./Businesses/malmo.js"></script>
+            </div>
+        
+            <!-- Snickare AB i Kristinehamn -->
+            <div>
+                <script src="./Businesses/kristinehamn.js"></script>
+            </div>
 
-        <!-- Snickare AB i Kristinehamn -->
-        <script src="./Businesses/kristinehamn.js"></script>
+            <!-- Test -->
+            <div>
+                <script src="./Businesses/test.js"></script>
+            </div>
 
-        <!-- Snickare AB i Malmö -->
-        <script src="./Businesses/test.js"></script>
+            <!-- Test -->
+            <div>
+                <script src="./Businesses/test.js"></script>
+            </div>
 
+            <!-- Test -->
+            <div>
+                <script src="./Businesses/test.js"></script>
+            </div>
+
+            <!-- Test -->
+            <div>
+                <script src="./Businesses/test.js"></script>
+            </div>
+
+            <!-- Test -->
+            <div>
+                <script src="./Businesses/test.js"></script>
+            </div>
+        </ul>
     </div>
 
+        
+    <div class="line"></div>
+        
     <footer>
+        <div class="footer-left">
+            <a href="#" data-href="#home">
+                <h6>Hantverkarguiden</h6>
+            </a>
+            <p>Det enkla sättet att hitta hjälp</p>
+        </div>
 
+        <ul class="footer-right">
+            <li>
+                <h6>Kontakta Oss</h6>
+            </li>
+            <li>
+                <a class="footer-link" href="">info@hantverkarguiden.se</a>
+            </li>
+        </ul>
     </footer>
 
+    
 
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="./scripts/isotope.js"></script>
     <script type="text/javascript" src="./scripts/javascript.js"></script>
-    <script type="text/javascript" src="./components/header.js"></script>
+    
+   
+    
     <script type="text/javascript" src="./scripts/hamham.js"></script>
+    <script type="text/javascript" src="./scripts/county.js"></script>
+   
     
     
 </body>

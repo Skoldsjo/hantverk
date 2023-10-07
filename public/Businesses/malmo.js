@@ -5,7 +5,7 @@ document.write(`
                 <div>
                     <h4>Rörmokare Skåne AB</h4>
                 </div>
-                <div class="box-contact">
+                <div class="contact-buttons">
                     <a href="tel:+012-3456789">
                         <button>012-3456789</button>
                     </a>
