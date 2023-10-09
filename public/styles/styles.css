@@ -46,9 +46,6 @@ h1 {
 .hero {
   margin: 0 auto;
   max-width: 800px;
-  /* display: flex;
-  align-items: center;
-  justify-content: center; */
 }
 
 
@@ -58,8 +55,6 @@ h1 {
   background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
-  /* margin-bottom: 20px; */
-  
   width: 300px;
   min-width: 300px;
   margin: 0 auto;
@@ -98,15 +93,7 @@ h1 {
 
 /* Grid styles */
 .grid {
-  /* display: grid;
-  grid-template-columns: repeat(3, 1fr);  */
-  /* Adjust as needed */
-  /* gap: 50px; */
-  /* margin: 0 auto;
-  max-width: 800px;
-  height: 500px; */
   margin: 5px;
-  
 }
 
 
@@ -128,7 +115,6 @@ h1 {
   justify-content: center;
   color: #000;
   align-items: normal;
-  /* background-color: #dcc477; */
 }
 
 .box-container{
@@ -159,10 +145,8 @@ button {
   text-transform: uppercase;
 }
 
-
 .contact-buttons button {
   background-color: #649e5a;
-  margin-top: 10px;
 }
 
 .contact-buttons a {
@@ -175,11 +159,9 @@ button {
   transition: ease 0.3s;
 }
 
-
 .social-media {
   display: flex;
   padding: 10px 40px;
-  /* margin-top: 20px; */
 }
 
 .social-media a {
@@ -203,6 +185,7 @@ button {
 .fa-house {
   color: #3a4965;
 }
+
 .fa-house:hover {
   color: red;
   transform: scale(1.2);
@@ -212,6 +195,7 @@ button {
 .fa-instagram {
   color: #bc2a8d;
 }
+
 .fa-instagram:hover {
   color: red;
   transform: scale(1.2);
@@ -227,7 +211,6 @@ button {
   transform: scale(1.2);
   transition: ease 0.3s;
 }
-
 
 .box-name {
   height: 40px;
@@ -250,7 +233,6 @@ button {
   font-size: 16px;
   line-height: 1.5;
   margin: 0;
-  
 }
 
 .line {
@@ -293,8 +275,6 @@ h6 {
 
 /* Responsive styles */
 @media screen and (max-width: 600px) {
-
-
 
   .box-container{
     padding: 10px 20px;

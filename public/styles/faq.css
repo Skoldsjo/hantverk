@@ -5,25 +5,73 @@ h2 {
   font-size: 20px;
 }
 
-.something {
+.faq {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
 
-/* Styling for the pricing section */
-.pricing {
-  /* width: 30%; */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* gap: 20px; */
-  background-color: #f5f5f5;
-  padding: 0 30px 40px;
+.faq-container {
+  width: 450px;
+  padding: 0px 10px;
 }
 
+.faq-holder {
+  box-sizing: border-box;
+  overflow: hidden;
+  padding-bottom: 10px;
+}
+  
+.faq-box {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.faq-box.active svg line:last-child {
+  display: none;
+}
 
+.faq-text {
+  font-size: 16px;
+  color: #29851b;
+  color: #ff6347;
+}
+
+.faq-img {
+  width: 26px;
+}
+
+.faq-sub-text {
+  transition: height 200ms ease-in-out;
+  height: 0px;
+}
+
+.accordion-text,
+.info-text {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.accordion-text {
+  max-width: 350px;
+  padding: 10px 0 20px 10px;
+}
+
+.accordion-text a {
+  text-transform: none;
+}
+
+/* Styling for the pricing section */
+.pricing {
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+  padding: 0 10px;
+}
 
 /* Styling for each pricing plan */
 .plan {
@@ -33,6 +81,7 @@ h2 {
   padding: 20px;
   text-align: center;
   width: 350px;
+  height: 450px;
   transition: transform 0.2s;
 }
 
@@ -54,7 +103,6 @@ h2 {
 .plan h5 {
   font-size: 12px;
 }
-
 
 /* Styling for plan prices */
 .price {
@@ -108,93 +156,8 @@ li p {
 }
 
 
-/* FAQ */
-
-
-
-.test {
-  width: 450px;
-  /* p
-  padding-top: 30px; */
-  padding: 0 10px;
-}
-
-
-
-
-
-.faq-container {
-    box-sizing: border-box;
-    overflow: hidden;
-    padding-bottom: 10px;
-}
-  
-.faq-box {
-    display: flex;
-    /* padding: 17.5px 0 0 0;  */
-    /* padding: 5px 20px 5px 0; */
-    align-items: center;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-}
-  
-  .faq-box.active svg line:last-child {
-    display: none;
-  }
-  
-  .faq-text {
-    font-size: 16px;
-    color: #29851b;
-    color: #ff6347;
-  }
-
-  .faq-img {
-    width: 26px;
-    
-  }
-  
-  .faq-sub-text {
-    transition: height 200ms ease-in-out;
-    height: 0px;
-  }
-  
-  .accordion-text,
-  .info-text {
-    font-size: 14px;
-    line-height: 20px;
-    
-  }
-  
-  .accordion-text {
-    max-width: 400px;
-    padding: 10px 0 20px 10px;
-  }
-
-  .accordion-text a {
-    text-transform: none;
-  }
-  
-  
-
-
 /* Responsive styles */
 @media screen and (max-width: 860px) {
-  .something {
-    display: block;
-  }
-
-
-  /* .pricing {
-    padding: 100px 0 0 0;
-  } */
-
-  .test {
-    padding: 0px 5px 0;
-    margin: 0 auto;
-    width: 360px;
-  
-  }
 
   .faq-text {
     font-size: 16px;
