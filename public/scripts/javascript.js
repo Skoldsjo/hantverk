@@ -3,9 +3,12 @@
 // external js: isotope.pkgd.js
 
 // init Isotope
-var $grid = $('.grid').isotope({
-  itemSelector: '.box'
-});
+var $grid;
+setTimeout(() => {
+  $grid = $('.grid').isotope({
+    itemSelector: '.box'
+  });
+}, 500);
 
 // store filter for each group
 var filters = {};
@@ -34,7 +37,7 @@ function concatValues( obj ) {
 }
 
 
-// Isotope - combination filters with selects END 
+// Isotope - combination filters with selects END
 
 
 
