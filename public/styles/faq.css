@@ -75,6 +75,19 @@ h2 {
   margin: 0 auto;
 }
 
+.premium-boxes {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  /* padding: 20px; */
+  text-align: center;
+  width: 370px;
+  height: 450px;
+  /* transition: transform 0.2s; */
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
 h3 {
   font-size: 20px;
   text-align: center;
