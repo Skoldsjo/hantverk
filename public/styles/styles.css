@@ -84,16 +84,21 @@ h1 {
 
 
 #container {
-  height: 800px;
+  max-height: 800px;
   overflow: auto;
   margin: 0 auto;
   max-width: 800px;
   margin-top: 20px;
 }
 
+.pre-info {
+  text-align: center;
+}
+
 /* Grid styles */
 .grid {
   margin: 5px;
+  display: none;
 }
 
 
@@ -280,11 +285,9 @@ h6 {
     padding: 10px 20px;
   }
 
-  /* .box-name{
+  .box-name{
     padding: 10px 20px;
-    display: block;
-    height: auto;
-  } */
+  }
 
   .box-name h4 {
     font-size: 18px;
@@ -292,11 +295,6 @@ h6 {
 
   .box-info{
     padding: 10px 20px;
-    
-  }
-
-  .box-info p{
-    line-height: 1.2;
     
   }
 

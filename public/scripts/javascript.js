@@ -1,3 +1,24 @@
+// Hide .grid until ui-group is chosen
+// Select the .ui-group elements
+const uiGroups = document.querySelectorAll('.ui-group select');
+
+// Select the .grid element
+const grid = document.querySelector('.grid');
+
+// Add a change event listener to all .ui-group select elements
+uiGroups.forEach(select => {
+  select.addEventListener('change', () => {
+    // Check if any option is selected in any .ui-group
+    const anyOptionSelected = Array.from(uiGroups).some(select => select.value !== '');
+
+    // Show or hide the .grid based on whether any option is selected
+    grid.style.display = anyOptionSelected ? 'block' : 'none';
+  });
+});
+
+
+
+// End
 
 
 // Isotope - combination filters with selects START
@@ -58,6 +79,9 @@ container.addEventListener('scroll', () => {
       });
   }
 });
+
+
+
 
 
 
