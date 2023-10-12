@@ -18,9 +18,17 @@ function fetchAndPopulateBusinesses(url, containerId) {
     xhr.send();
   }
   
-  // Usage:
-  fetchAndPopulateBusinesses('/B-index/mlskog.html', 'containerOne');
-  fetchAndPopulateBusinesses('/B-index/basket.html', 'containerTwo');
-  fetchAndPopulateBusinesses('/B-index/skaneAB.html', 'containerThree');
-  fetchAndPopulateBusinesses('/B-index/test.html', 'containerFour');
-  fetchAndPopulateBusinesses('/B-index/basket.html', 'containerFive');
+  // Örebro - Karlskoga
+  fetchAndPopulateBusinesses('/B-index/Orebro/Karlskoga/mlskog.html', 'container00001');
+
+  fetchAndPopulateBusinesses('/B-index/Orebro/Karlskoga/hermansson.html', 'container00002');
+
+  fetchAndPopulateBusinesses('/B-index/Orebro/Karlskoga/karlskogaelochfastigheter.html', 'container00003');
+
+  fetchAndPopulateBusinesses('/B-index/Orebro/Karlskoga/karlskogamaleriservice.html', 'container00005');
+
+  fetchAndPopulateBusinesses('/B-index/Orebro/Karlskoga/TonyThomassonsBygg.html', 'container00006');
+
+  // Örebro - Degerfors
+
+  fetchAndPopulateBusinesses('/B-index/Orebro/Degerfors/lindasstad.html', 'container00004');

@@ -34,7 +34,7 @@ $(document).ready(function(){
         $('#county-blekinge').show();
       } else if (selectedValue === '.dalarna') {
         $('#county-dalarna').show();  
-      } else if (selectedValue === '.gottland') {
+      } else if (selectedValue === '.gotland') {
         $('#county-gotland').show();  
       } else if (selectedValue === '.gavleborg') {
         $('#county-gavleborg').show();  
@@ -66,8 +66,8 @@ $(document).ready(function(){
         $('#county-vasternorrland').show();
       } else if (selectedValue === '.vastmanland') {
         $('#county-vastmanland').show();
-      } else if (selectedValue === '.goteborg') {
-        $('#county-goteborg').show();  
+      } else if (selectedValue === '.vastragotaland') {
+        $('#county-vastragotaland').show();  
       } else if (selectedValue === '.orebro') {
         $('#county-orebro').show();
       } else if (selectedValue === '.ostergotland') {
